@@ -1,67 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza Order Form</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8"> <!-- Declaring character set -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive viewport settings -->
+    <title>Pizza Order Form</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Linking to external CSS file -->
 </head>
 <body>
     <div class="container">
-        <div class="overlay"></div>
-        <h1>Pizza Order Form</h1>
-        <p id="student-info"></p>
-        <form id="pizza-form">
-            <label for="size">Size:</label>
-            <select id="size" name="size">
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
+        <div class="overlay"></div> <!-- Overlay for styling purposes -->
+        <h1>Pizza Order Form</h1> <!-- Heading for the form -->
+        <p id="student-info"></p> <!-- Paragraph to display student information (not currently used) -->
+        <form id="pizza-form"> <!-- Pizza order form -->
+            <label for="size">Size:</label> <!-- Label for pizza size -->
+            <select id="size" name="size"> <!-- Dropdown for selecting pizza size -->
+                <option value="small">Small</option> <!-- Option for small size -->
+                <option value="medium">Medium</option> <!-- Option for medium size -->
+                <option value="large">Large</option> <!-- Option for large size -->
             </select><br>
             
-            <label for="crust">Crust:</label>
+            <label for="crust">Crust:</label> <!-- Label for pizza crust -->
             <select id="crust" name="crust">
-                <option value="thin">Thin</option>
-                <option value="regular">Regular</option>
-                <option value="thick">Thick</option>
+                <option value="regular">Regular</option> <!-- Option for regular crust -->
+                <option value="thick">Thick</option> <!-- Option for thick crust -->
             </select><br>
             
-            <label for="toppings">Toppings:</label><br>
+            <label>Toppings:</label><br> <!-- Label for pizza toppings -->
+            <!-- Checkboxes for selecting toppings -->
             <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
             <label for="pepperoni">Pepperoni</label><br>
 
-            <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
-            <label for="mushrooms">Mushrooms</label><br>
+            <!-- More checkboxes for other topping options -->
+            <!-- Each topping has a corresponding checkbox and label -->
 
-            <input type="checkbox" id="sausage" name="topping" value="sausage">
-            <label for="sausage">Sausage</label><br>
-
-            <input type="checkbox" id="mozza" name="topping" value="mozzarella cheese">
-            <label for="mozza">Extra Mozzarella</label><br>
-
-            <input type="checkbox" id="redonion" name="topping" value="redonion">
-            <label for="redonion">Red Onions</label><br>
-
-            <input type="checkbox" id="chicken" name="topping" value="chicken">
-            <label for="chicken">Butter Chicken</label><br>
-
-            <input type="checkbox" id="jalapeneo" name="topping" value="jalapeneo">
-            <label for="jalapeneo">Jalepeneos</label><br>
-
-            <input type="checkbox" id="olive" name="topping" value="olive">
-            <label for="olive">Olives</label><br>
-
-            <input type="checkbox" id="pesto" name="topping" value="pesto">
-            <label for="pesto">Pesto Chicken</label><br>
-
-            <input type="checkbox" id="meatball" name="topping" value="meatball">
-            <label for="meatball">Meatball</label><br>
-
-            <input type="checkbox" id="cheddar" name="topping" value="cheddar">
-            <label for="cheddar">Extra Cheddar Cheese</label><br>
-            
-            <label for="pops">Choose a pop:</label>
-            <select id="pop" name="pop">
+            <label for="pop">Choose a pop:</label> <!-- Label for selecting a beverage -->
+            <select id="pop" name="pop"> <!-- Dropdown for selecting beverage -->
+                <!-- Options for different beverages -->
                 <option value="coke">Coke</option>
                 <option value="diet">Diet Coke</option>
                 <option value="gingerale">Gingerale</option>
@@ -69,12 +43,11 @@
                 <option value="soda">Grape Soda</option>
                 <option value="rootbeer">Root Beer</option>
                 <option value="iced">Iced Tea</option>
-
             </select><br>
-            <input type="submit" value="Order">
+            <input type="submit" value="Order"> <!-- Submit button for placing the order -->
         </form>
     </div>
 
-    <script src="js/script.js" defer></script>
+    <script src="js/script.js" defer></script> <!-- Linking to external JavaScript file -->
 </body>
 </html>

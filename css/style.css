@@ -80,10 +80,8 @@ p {
     background-size: cover;
     border-radius: 10px;
     z-index: -100; /* Ensure overlay is behind the description text */
-    backdrop-filter: blur(40%); /* Apply blur effect to the overlay */
+    backdrop-filter: blur(40px); /* Apply blur effect to the overlay */
 }
-
-/* Add this CSS code */
 
 .description-container {
     background-color: rgba(255, 255, 255, 0.753);
