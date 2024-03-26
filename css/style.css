@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/Pizza.jpg);
+    background-size: cover;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.505); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; 
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    text-align: center;
+    filter: drop-shadow(0 0 0.05rem black);
+}
+
+select {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type="submit"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 45%;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-in-out .5s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    transition: ease-out .5s;
+    filter: drop-shadow(0 0 0.15rem #062a52);
+}
+
+p {
+    font-style: italic;
+    text-align: center;
+    position: relative; /* Needed for z-index */
+    z-index: 1; /* Ensure description text appears above the overlay */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/Pizza2.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    z-index: -100; /* Ensure overlay is behind the description text */
+    backdrop-filter: blur(40%); /* Apply blur effect to the overlay */
+}
+
+/* Add this CSS code */
+
+.description-container {
+    background-color: rgba(255, 255, 255, 0.753);
+    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure the description container appears above the blurred background */
+}
+

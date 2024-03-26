@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="overlay"></div>
+        <h1>Pizza Order Form</h1>
+        <p id="student-info"></p>
+        <form id="pizza-form">
+            <label for="size">Size:</label>
+            <select id="size" name="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select><br>
+            
+            <label for="crust">Crust:</label>
+            <select id="crust" name="crust">
+                <option value="thin">Thin</option>
+                <option value="regular">Regular</option>
+                <option value="thick">Thick</option>
+            </select><br>
+            
+            <label for="toppings">Toppings:</label><br>
+            <input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+            <label for="pepperoni">Pepperoni</label><br>
+
+            <input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+            <label for="mushrooms">Mushrooms</label><br>
+
+            <input type="checkbox" id="sausage" name="topping" value="sausage">
+            <label for="sausage">Sausage</label><br>
+
+            <input type="checkbox" id="mozza" name="topping" value="mozzarella cheese">
+            <label for="mozza">Extra Mozzarella</label><br>
+
+            <input type="checkbox" id="redonion" name="topping" value="redonion">
+            <label for="redonion">Red Onions</label><br>
+
+            <input type="checkbox" id="chicken" name="topping" value="chicken">
+            <label for="chicken">Butter Chicken</label><br>
+
+            <input type="checkbox" id="jalapeneo" name="topping" value="jalapeneo">
+            <label for="jalapeneo">Jalepeneos</label><br>
+
+            <input type="checkbox" id="olive" name="topping" value="olive">
+            <label for="olive">Olives</label><br>
+
+            <input type="checkbox" id="pesto" name="topping" value="pesto">
+            <label for="pesto">Pesto Chicken</label><br>
+
+            <input type="checkbox" id="meatball" name="topping" value="meatball">
+            <label for="meatball">Meatball</label><br>
+
+            <input type="checkbox" id="cheddar" name="topping" value="cheddar">
+            <label for="cheddar">Extra Cheddar Cheese</label><br>
+            
+            <label for="pops">Choose a pop:</label>
+            <select id="pop" name="pop">
+                <option value="coke">Coke</option>
+                <option value="diet">Diet Coke</option>
+                <option value="gingerale">Gingerale</option>
+                <option value="crush">Orange Crush</option>
+                <option value="soda">Grape Soda</option>
+                <option value="rootbeer">Root Beer</option>
+                <option value="iced">Iced Tea</option>
+
+            </select><br>
+            <input type="submit" value="Order">
+        </form>
+    </div>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
